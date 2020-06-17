@@ -1,8 +1,3 @@
-/**
-* Created at 1397/12/14 (2019/3/5).
-* @author {@link https://mirismaili.github.io S. Mahdi Mir-Ismaili}
-*/
-
 @import '~@angular/material/theming';
 
 @include mat-core();
@@ -15,8 +10,7 @@
 	$warn: map-get($theme, warn);
 	$background: map-get($theme, background);
 	$foreground: map-get($theme, foreground);
-	
-  // CSS THEME-DEPENDENT-STYLES ARE HERE:
+
   .theme-dependent-colors {
       background: mat-color($primary);
       color: mat-color($accent);
@@ -29,6 +23,7 @@
 * To better understanding the schema of the map, see `@each` loop below and especially pay attention to 
 * `map-has-key()` functions.
 */
+
 $app-themes: (
 		indigo-pink : (primary-base: $mat-indigo, accent-base: $mat-pink),
 		deeppurple-amber: (primary-base: $mat-deep-purple, accent-base: $mat-amber),
